@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/assets/fonts/Lato-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/fonts/Lato-Bold.ttf) format("truetype");
+}
+
+:root {
+  --red-1: #ad0000;
+}
+
+.color-theme {
+  color: var(--red-1);
+}
+
+.bg-theme {
+  background-color: var(--red-1);
+}
+
+.bg-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  background: rgb(204, 204, 204);
+  font-family: "Lato";
+}
+
+.fz-1 {
+  font-size: 14px;
+}
+
+.fz-2 {
+  font-size: 16px;
+}
+
+.fz-3 {
+  font-size: 18px;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight:500;
+  text-transform: uppercase;
+}
+
+.page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+.page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+@media print {
+  body,
+  .page {
+    margin: 0;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0);
+  }
+
+  .container-fluid{
+    padding-left:1rem!important;
+  }
+}

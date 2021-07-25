@@ -1,0 +1,9 @@
+<div class="section-title">projects</div>
+
+<div class="projects-section mb-3" *ngFor="let p of projects">
+  <div class="project-title fz-1 color-theme d-flex justify-content-between">
+    <div class="fw-500">{{ p.name }}</div>
+    <div class="">{{ p.tech }}</div>
+  </div>
+  <div class="description fz-1">{{ p.description }}</div>
+</div>

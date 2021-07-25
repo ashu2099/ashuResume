@@ -1,0 +1,12 @@
+.separator-line {
+  height: 3px;
+}
+
+.ashu-name {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.ashu-name div::first-letter {
+  font-size: 21px;
+}

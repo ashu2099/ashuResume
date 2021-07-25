@@ -1,0 +1,19 @@
+<div class="section-title">
+  work experience
+</div>
+
+<div class="experience-section mb-3" *ngFor="let exp of workExperience">
+  <div class="d-flex justify-content-between fz-1">
+    <div class="experience-title color-theme fw-500">
+      {{exp.jobPost+" | "+exp.companyName}}
+    </div>
+  
+    <div class="experience-duration">
+      {{exp.duration}}
+    </div>
+  </div>
+
+  <div style="white-space:pre-line" class="fz-1">
+    {{exp.description}}
+  </div>
+</div>
